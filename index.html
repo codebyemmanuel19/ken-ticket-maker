@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Ken Analysis Ticket Maker</title>
-<style>
+<style> 
 :root{--blue:#1a4398;--yellow:#ffc933;--bg:#e6ebf7;--ink:#0d2557}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--ink);padding:16px}
@@ -25,34 +25,34 @@ button.alt{flex:1;min-width:150px;background:var(--yellow);color:var(--ink);bord
 #previewBox{width:100%;overflow:hidden;border-radius:14px;background:#fff}
 #previewScale{transform-origin:top left}
 /* ===== FLYER ===== */
-.flyer{width:1280px;min-height:683px;background:#e6ebf7;font-family:'Segoe UI',Arial,sans-serif;color:#0d2557;padding:22px 30px;display:flex;flex-direction:column}
+.flyer{width:1280px;min-height:683px;background:#e6ebf7;font-family:'Segoe UI',Arial,sans-serif;color:#0a1c47;padding:22px 30px;display:flex;flex-direction:column;font-weight:800}
 .flyer *{box-sizing:border-box}
-.f-top{display:flex;align-items:center;background:#1a4398;border-radius:60px;height:96px;padding:0 30px;gap:24px;color:#fff;flex:none}
-.f-logo{width:56px;height:56px;border-radius:50%;background:#ffc933;color:#1a4398;font-weight:900;font-size:26px;display:flex;align-items:center;justify-content:center;flex:none}
-.f-brand{font-size:32px;font-weight:900;letter-spacing:1px;line-height:1;white-space:nowrap}.f-brand span{color:#ffc933}
-.f-brand small{display:block;font-size:15px;font-weight:600;letter-spacing:0;margin-top:6px;opacity:.9}
-.f-div{width:2px;height:52px;background:rgba(255,255,255,.4)}
-.f-date{background:#ffc933;color:#0d2557;border-radius:50px;padding:12px 26px;font-size:27px;font-weight:900;white-space:nowrap}
-.f-tg{margin-left:auto;text-align:right;font-size:18px;font-weight:700;line-height:1.35;white-space:nowrap}
-.f-tg b{display:block;font-size:22px;color:#ffc933}
-.f-card{margin-top:16px;background:#fff;border-radius:30px;padding:12px 16px 4px;flex:1;display:flex;flex-direction:column}.f-rows{flex:1;display:flex;flex-direction:column}
-.f-hd,.f-row{display:grid;align-items:center}
-.f-hd{background:#1a4398;color:#fff;border-radius:50px;height:50px;font-size:21px;flex:none;font-weight:800;text-align:center}
+.f-top{display:flex;align-items:center;background:#1a4398;border-radius:60px;height:100px;padding:0 30px;gap:24px;color:#fff;flex:none}
+.f-logo{width:60px;height:60px;border-radius:50%;background:#ffc933;color:#1a4398;font-weight:900;font-size:28px;display:flex;align-items:center;justify-content:center;flex:none}
+.f-brand{font-size:38px;font-weight:900;letter-spacing:1px;line-height:1;white-space:nowrap}.f-brand span{color:#ffc933}
+.f-brand small{display:block;font-size:17px;font-weight:800;letter-spacing:0;margin-top:6px}
+.f-div{width:3px;height:54px;background:rgba(255,255,255,.55)}
+.f-date{background:#ffc933;color:#0a1c47;border-radius:50px;padding:12px 24px;font-size:30px;font-weight:900;white-space:nowrap}
+.f-tg{margin-left:auto;text-align:right;font-size:20px;font-weight:800;line-height:1.35;white-space:nowrap}
+.f-tg b{display:block;font-size:25px;color:#ffc933;font-weight:900}
+.f-card{margin-top:16px;background:#fff;border-radius:30px;padding:14px 16px 4px;flex:1;display:flex;flex-direction:column;border:4px solid #1a4398}.f-rows{flex:1;display:flex;flex-direction:column}
+.f-hd,.f-row{display:grid;align-items:center;column-gap:8px}
+.f-hd{background:#1a4398;color:#fff;border-radius:50px;height:60px;font-size:27px;flex:none;font-weight:900;text-align:center;letter-spacing:1px}
 .f-hd div:nth-child(2){text-align:left;padding-left:12px}
-.f-row{flex:1;min-height:66px;border-bottom:2px solid #d6def0;text-align:center;font-size:25px;font-weight:700}
+.f-row{flex:1;min-height:92px;border-bottom:3px solid #c3cfec;text-align:center;font-size:30px;font-weight:900;padding:6px 0}
 .f-row:last-child{border-bottom:none}
-.f-lg{font-size:23px;font-weight:900;color:#1a4398;line-height:1.1}.f-lg small{display:block;font-size:15px;font-weight:700;color:#5a6b92;margin-top:4px}
-.f-m{text-align:left;padding-left:12px;font-size:26px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.f-p{color:#1a4398;font-size:22px;font-weight:800;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.f-o{font-size:26px;font-weight:900}
-.f-r{font-weight:900;font-size:24px;display:flex;gap:8px;justify-content:center;align-items:center;white-space:nowrap}
-.f-r.won{color:#14a05a}.f-r.lost{color:#d63b3b}.f-r.pend{color:#7a88ab;font-size:22px}
+.f-lg{font-size:32px;font-weight:900;color:#1a4398;line-height:1.1}.f-lg small{display:block;font-size:23px;font-weight:900;color:#2b3d70;margin-top:4px}
+.f-m{text-align:left;padding-left:12px;font-size:34px;font-weight:900;color:#0a1c47;line-height:1.12}
+.f-p{color:#1a4398;font-size:31px;font-weight:900;line-height:1.12}
+.f-o{font-size:38px;font-weight:900;color:#0a1c47}
+.f-r{font-weight:900;font-size:30px;display:flex;gap:8px;justify-content:center;align-items:center;white-space:nowrap}
+.f-r.won{color:#0b8a47}.f-r.lost{color:#d02a2a}.f-r.pend{color:#4a5a85;font-size:29px}
 .f-bot{display:flex;gap:18px;margin-top:16px;flex:none}
-.f-total{flex:0 0 450px;border-radius:50px;display:flex;align-items:center;justify-content:space-between;padding:0 32px;height:82px}
-.f-total .l{font-size:23px;font-weight:900}.f-total .r{font-size:46px;font-weight:900}
-.f-join{flex:1;border-radius:50px;background:#1a4398;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 34px;height:82px}
-.f-join .a{font-size:20px;font-weight:700;line-height:1.3}.f-join .a b{display:block;font-size:27px;color:#ffc933;font-weight:900}
-.f-join .b{font-size:17px;font-weight:700;text-align:right;opacity:.95}
+.f-total{flex:0 0 500px;border-radius:50px;display:flex;align-items:center;justify-content:space-between;padding:0 34px;height:98px}
+.f-total .l{font-size:29px;font-weight:900}.f-total .r{font-size:62px;font-weight:900}
+.f-join{flex:1;border-radius:50px;background:#1a4398;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 30px;height:98px}
+.f-join .a{font-size:24px;font-weight:900;line-height:1.3}.f-join .a b{display:block;font-size:33px;color:#ffc933;font-weight:900}
+.f-join .b{font-size:20px;font-weight:900;text-align:right;line-height:1.3}
 </style>
 </head>
 <body>
@@ -75,7 +75,7 @@ button.alt{flex:1;min-width:150px;background:var(--yellow);color:var(--ink);bord
       <button class="alt" id="add">+ Add game</button>
       <button class="main" id="make">Update flyer</button>
     </div>
-    <p class="hint">Result: leave on "Pending" before the games. After the games, choose Won or Lost and type the score.</p>
+    <p class="hint">Result: shows "Pending" before the games. After the games, choose Won or Lost and type the score.</p>
   </div>
 
   <div class="panel">
@@ -134,12 +134,12 @@ function renderForm(list){
 
 function flyerHTML(state){
   var games=state.games.filter(function(g){return g.match&&g.pick&&g.odd;});
-  var anyRes=games.some(function(g){return g.res;});
+  var anyRes=true;
   var allWon=games.length>0&&games.every(function(g){return g.res==="won";});
   var anyLost=games.some(function(g){return g.res==="lost";});
   var prod=1; games.forEach(function(g){var o=parseFloat(String(g.odd).replace(",","."));if(o>0)prod*=o;});
   var total=state.totalOverride?state.totalOverride:(games.length?prod.toFixed(2):"-");
-  var cols=anyRes?"140px 1fr 320px 110px 190px":"140px 1fr 320px 120px";
+  var cols=anyRes?"150px 1fr 290px 120px 190px":"150px 1fr 320px 130px";
   var rows=games.map(function(g){
     var lg=esc(g.lg||state.league||"");
     var res="";

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Ken Analysis Ticket Maker</title>
-<style> 
+<style>
 :root{--blue:#1a4398;--yellow:#ffc933;--bg:#e6ebf7;--ink:#0d2557}
 *{box-sizing:border-box;margin:0;padding:0}
 body{font-family:'Segoe UI',Arial,sans-serif;background:var(--bg);color:var(--ink);padding:16px}
@@ -53,6 +53,52 @@ button.alt{flex:1;min-width:150px;background:var(--yellow);color:var(--ink);bord
 .f-join{flex:1;border-radius:50px;background:#1a4398;color:#fff;display:flex;align-items:center;justify-content:space-between;padding:0 30px;height:98px}
 .f-join .a{font-size:24px;font-weight:900;line-height:1.3}.f-join .a b{display:block;font-size:33px;color:#ffc933;font-weight:900}
 .f-join .b{font-size:20px;font-weight:900;text-align:right;line-height:1.3}
+/* ===== CLEAN STYLE ===== */
+.cf{width:1280px;min-height:600px;background:#e6ebf7;font-family:'Segoe UI',Arial,sans-serif;color:#0a1c47;padding:36px 70px 44px;display:flex;flex-direction:column;font-weight:800}
+.cf *{box-sizing:border-box}
+.cf-top{display:flex;gap:18px;flex:none;padding:0 80px;justify-content:center}
+.cf-date{flex:1;background:#1a4398;color:#ffc933;border-radius:50px;height:98px;display:flex;align-items:center;justify-content:center;font-size:42px;font-weight:900;letter-spacing:1px}
+.cf-total{flex:0 0 420px;border-radius:50px;display:flex;align-items:center;justify-content:space-between;padding:0 34px;height:98px}
+.cf-total .l{font-size:29px;font-weight:900}.cf-total .r{font-size:62px;font-weight:900}
+.cf-card{margin-top:16px;justify-content:center;background:#fff;border-radius:30px;padding:14px 16px 4px;flex:1;display:flex;flex-direction:column;border:4px solid #1a4398}
+.cf-h,.cf-row{display:grid;align-items:center;column-gap:14px;grid-template-columns:1.5fr 1.1fr .7fr}
+.cf-h{padding:0 40px;background:#1a4398;color:#fff;border-radius:50px;height:60px;font-size:27px;font-weight:900;text-align:center;letter-spacing:1px;flex:none}
+
+.cf-row{flex:1;min-height:100px;border-bottom:3px solid #c3cfec;text-align:center;font-size:30px;font-weight:900;padding:6px 40px}
+.cf-row:last-child{border-bottom:none}
+.cf-m{text-align:center;font-size:32px;font-weight:900;line-height:1.12;word-break:break-word}.cf-m small{display:block;font-size:23px;color:#2b3d70;margin-top:4px}
+.cf-p{color:#1a4398;font-size:32px;font-weight:900;line-height:1.12}
+.cf-o{font-size:38px;font-weight:900}
+.cf-row .f-r,.cf-row .f-r.pend{font-size:32px}
+/* ===== GREEN STYLE ===== */
+.gf{width:1280px;min-height:720px;background:#eaf3ea;font-family:'Segoe UI',Arial,sans-serif;color:#0b2a0d;display:flex;flex-direction:column;font-weight:800}
+.gf *{box-sizing:border-box}
+.gf-top{background:#0c2a0e;height:150px;display:flex;align-items:center;padding:0 60px;gap:30px;color:#fff;flex:none}
+.gf-logo{width:104px;height:104px;border-radius:50%;background:#fff;border:6px solid #fff;display:flex;align-items:center;justify-content:center;flex:none}
+.gf-logo b{width:100%;height:100%;border-radius:50%;background:#2fb344;color:#fff;font-size:42px;font-weight:900;display:flex;align-items:center;justify-content:center}
+.gf-brand{font-size:50px;font-weight:900;line-height:1.05;letter-spacing:1px}.gf-brand small{display:block;font-size:20px;font-weight:800;color:#8fe39a;letter-spacing:0;margin-top:6px}
+.gf-tg{margin-left:auto;text-align:right;font-size:22px;font-weight:800;line-height:1.4}.gf-tg b{display:block;font-size:30px;color:#8fe39a;font-weight:900}
+.gf-wrap{padding:26px 48px 34px;flex:1;display:flex;flex-direction:column}
+.gf-bar{display:flex;height:88px;background:#0c2a0e;color:#fff;flex:none;align-items:stretch}
+.gf-day{flex:1.3;display:flex;align-items:center;justify-content:center;font-size:44px;font-weight:900;letter-spacing:1px}
+.gf-dt{flex:1;background:#6fcf72;color:#0c2a0e;display:flex;align-items:center;justify-content:center;font-size:44px;font-weight:900}
+.gf-hd{flex:1.3;display:flex;align-items:center;justify-content:center;font-size:30px;font-weight:900;color:#fff}
+.gf-tbl{border:3px solid #a9c9ab;border-top:none;background:#dfeedd;flex:1;display:flex;flex-direction:column}
+.gf-h,.gf-r{display:grid;align-items:center;grid-template-columns:150px 1fr 330px 130px 190px}
+.gf-h{background:#b9deb9;height:64px;font-size:26px;font-weight:900;text-align:center;color:#0c2a0e;border-bottom:3px solid #a9c9ab}
+.gf-h div:nth-child(2){text-align:left;padding-left:14px}
+.gf-r{flex:1;min-height:96px;border-bottom:3px solid #a9c9ab;text-align:center;padding:6px 0;font-weight:900}
+.gf-r:last-child{border-bottom:none}
+.gf-lg{font-size:32px;color:#14612a;line-height:1.1}.gf-lg small{display:block;font-size:22px;color:#2f5a35;margin-top:4px}
+.gf-m{text-align:left;padding-left:14px;font-size:34px;line-height:1.12}
+.gf-p{font-size:31px;color:#14612a;line-height:1.12}
+.gf-o{font-size:38px}
+.gf-s{font-size:30px;display:flex;gap:8px;justify-content:center;align-items:center;white-space:nowrap}
+.gf-s.won{color:#0b8a47}.gf-s.lost{color:#d02a2a}.gf-s.pend{color:#4c6a50;font-size:28px}
+.gf-bot{display:flex;justify-content:space-between;align-items:center;margin-top:22px;flex:none;gap:20px}
+.gf-note{font-size:21px;font-weight:800;color:#2f5a35;line-height:1.4}.gf-note b{display:block;font-size:28px;color:#14612a;font-weight:900}
+.gf-total{border-radius:26px;padding:0 40px;height:100px;display:flex;align-items:center;gap:26px;flex:none}
+.gf-total .l{font-size:30px;font-weight:900}.gf-total .r{font-size:60px;font-weight:900}
 </style>
 </head>
 <body>
@@ -62,6 +108,8 @@ button.alt{flex:1;min-width:150px;background:var(--yellow);color:var(--ink);bord
   <div class="panel">
     <label>Date text (shows on the flyer)</label>
     <input id="date" placeholder="SATURDAY 14/11/2026">
+    <label>Style</label>
+    <select id="style"><option value="blue">Blue (Ken Analysis)</option><option value="green">Green (dark green table)</option><option value="clean">Clean (video: no league, no links)</option></select>
     <label>League (default for each game)</label>
     <input id="league" value="NBA">
     <label>Total odds (leave empty to calculate automatically)</label>
@@ -132,7 +180,59 @@ function renderForm(list){
   gamesEl.querySelectorAll('input,select').forEach(function(x){x.addEventListener('input',update);x.addEventListener('change',update);});
 }
 
+function flyerGreen(state){
+  var games=state.games.filter(function(g){return g.match&&g.pick&&g.odd;});
+  var allWon=games.length>0&&games.every(function(g){return g.res==="won";});
+  var anyLost=games.some(function(g){return g.res==="lost";});
+  var prod=1; games.forEach(function(g){var o=parseFloat(String(g.odd).replace(",","."));if(o>0)prod*=o;});
+  var total=state.totalOverride?state.totalOverride:(games.length?prod.toFixed(2):"-");
+  var d=(state.date||defaultDate()).split(" "), day=d[0], dt=d.slice(1).join(" ");
+  var rows=games.map(function(g){
+    var lg=esc(g.lg||state.league||"");
+    var res;
+    if(g.res==="won")res='<div class="gf-s won"><span>'+esc(g.score)+'</span><span>&#10004;</span></div>';
+    else if(g.res==="lost")res='<div class="gf-s lost"><span>'+esc(g.score)+'</span><span>&#10008;</span></div>';
+    else res='<div class="gf-s pend">Pending</div>';
+    return '<div class="gf-r"><div class="gf-lg">'+lg+'<small>'+esc(g.time)+'</small></div><div class="gf-m">'+esc(g.match)+'</div><div class="gf-p">'+esc(g.pick)+'</div><div class="gf-o">'+esc(g.odd)+'</div>'+res+'</div>';
+  }).join("");
+  var label="COMBINED RATE", bg="#0c2a0e", fg="#ffffff";
+  if(allWon){label="COMBINED RATE WON";bg="#2fb344";fg="#062a0c";}
+  else if(anyLost){label="TICKET LOST";bg="#ff8a8a";fg="#3a0808";}
+  return '<div class="gf">'+
+  '<div class="gf-top"><div class="gf-logo"><b>KA</b></div><div class="gf-brand">KEN<br>ANALYSIS FC<small>'+esc(BRAND_SUB)+'</small></div><div class="gf-tg">Join us on Telegram<b>'+esc(TELEGRAM)+'</b></div></div>'+
+  '<div class="gf-wrap"><div class="gf-bar"><div class="gf-day">'+esc(day)+'</div><div class="gf-dt">'+esc(dt)+'</div><div class="gf-hd">@kenanalysis1</div></div>'+
+  '<div class="gf-tbl"><div class="gf-h"><div>LEAGUE</div><div>MATCH</div><div>SELECTION</div><div>RATE</div><div>RESULT</div></div>'+rows+'</div>'+
+  '<div class="gf-bot"><div class="gf-note">Free daily analysis<b>'+esc(TELEGRAM)+'</b>18+ | Bet responsibly. No result is guaranteed.</div>'+
+  '<div class="gf-total" style="background:'+bg+';color:'+fg+'"><div class="l">'+label+'</div><div class="r">'+esc(total)+'</div></div></div></div>'+
+  '</div>';
+}
+
+function flyerClean(state){
+  var games=state.games.filter(function(g){return g.match&&g.pick&&g.odd;});
+  var allWon=games.length>0&&games.every(function(g){return g.res==="won";});
+  var anyLost=games.some(function(g){return g.res==="lost";});
+  var prod=1; games.forEach(function(g){var o=parseFloat(String(g.odd).replace(",","."));if(o>0)prod*=o;});
+  var total=state.totalOverride?state.totalOverride:(games.length?prod.toFixed(2):"-");
+  var rh=games.length>7?72:games.length>5?84:100;
+  var rows=games.map(function(g){
+    var res;
+    if(g.res==="won")res='<div class="f-r won"><span>'+esc(g.score)+'</span><span>&#10004;</span></div>';
+    else if(g.res==="lost")res='<div class="f-r lost"><span>'+esc(g.score)+'</span><span>&#10008;</span></div>';
+    else res='<div class="f-r pend">Pending</div>';
+    var mf=32, pf=32;
+    return '<div class="cf-row" style="min-height:'+rh+'px"><div class="cf-m" style="font-size:'+mf+'px">'+esc(g.match)+'</div><div class="cf-p" style="font-size:'+pf+'px">'+esc(g.pick)+'</div>'+res+'</div>';
+  }).join("");
+  var label="TOTAL ODDS", bg="#ffc933", fg="#0d2557";
+  if(allWon){label="TOTAL ODDS WON";bg="#3ddc84";fg="#06301a";}
+  else if(anyLost){label="TICKET LOST";bg="#ff8a8a";fg="#3a0808";}
+  return '<div class="cf"><div class="cf-top"><div class="cf-date">'+esc(state.date||defaultDate())+'</div>'+
+  '<div class="cf-total" style="background:'+bg+';color:'+fg+'"><div class="l">'+label+'</div><div class="r">'+esc(total)+'</div></div></div>'+
+  '<div class="cf-card"><div class="cf-h"><div>MATCH</div><div>PICK</div><div>RESULT</div></div>'+rows+'</div></div>';
+}
+
 function flyerHTML(state){
+  if(state.style==="clean")return flyerClean(state);
+  if(state.style==="green")return flyerGreen(state);
   var games=state.games.filter(function(g){return g.match&&g.pick&&g.odd;});
   var anyRes=true;
   var allWon=games.length>0&&games.every(function(g){return g.res==="won";});
@@ -162,7 +262,7 @@ function flyerHTML(state){
 }
 
 function getState(){
-  return {date:document.getElementById('date').value.trim(),league:document.getElementById('league').value.trim(),
+  return {style:document.getElementById('style').value,date:document.getElementById('date').value.trim(),league:document.getElementById('league').value.trim(),
     totalOverride:document.getElementById('totalOverride').value.trim(),games:readGames()};
 }
 function save(s){try{localStorage.setItem(KEY,JSON.stringify(s));}catch(e){}}
@@ -185,6 +285,7 @@ document.getElementById('add').onclick=function(){var l=readGames();l.push({lg:d
 document.getElementById('make').onclick=update;
 document.getElementById('clear').onclick=function(){if(confirm("Clear all games?")){renderForm([{},{}]);document.getElementById('totalOverride').value="";update();}};
 document.getElementById('date').addEventListener('input',update);
+document.getElementById('style').addEventListener('change',update);
 document.getElementById('league').addEventListener('input',update);
 document.getElementById('totalOverride').addEventListener('input',update);
 
@@ -205,6 +306,7 @@ document.getElementById('download').onclick=function(){
 (function init(){
   var s=load();
   document.getElementById('date').value=(s&&s.date)||defaultDate();
+  document.getElementById('style').value=(s&&s.style)||"blue";
   if(s){document.getElementById('league').value=s.league||"NBA";document.getElementById('totalOverride').value=s.totalOverride||"";}
   renderForm((s&&s.games&&s.games.length)?s.games:[{},{}]);
   update();

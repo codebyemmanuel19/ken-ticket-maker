@@ -109,7 +109,7 @@ button.alt{flex:1;min-width:150px;background:var(--yellow);color:var(--ink);bord
     <label>Date text (shows on the flyer)</label>
     <input id="date" placeholder="SATURDAY 14/11/2026">
     <label>Style</label>
-    <select id="style"><option value="blue">Blue (Ken Analysis)</option><option value="green">Green (dark green table)</option><option value="clean">Clean (video: no league, no links)</option></select>
+    <select id="style"><option value="clean">Clean (video: no league, no links)</option><option value="blue">Blue (Ken Analysis)</option><option value="green">Green (dark green table)</option></select>
     <label>League (default for each game)</label>
     <input id="league" value="NBA">
     <label>Total odds (leave empty to calculate automatically)</label>
@@ -142,7 +142,7 @@ button.alt{flex:1;min-width:150px;background:var(--yellow);color:var(--ink);bord
 <script>
 var TELEGRAM = "t.me/kenanalysis1";
 var BRAND_SUB = "Daily basketball analysis";
-var KEY = "ken_ticket_maker_v1";
+var KEY = "ken_ticket_maker_v2";
 
 function pad(n){return n<10?"0"+n:""+n;}
 function defaultDate(){
@@ -306,7 +306,7 @@ document.getElementById('download').onclick=function(){
 (function init(){
   var s=load();
   document.getElementById('date').value=(s&&s.date)||defaultDate();
-  document.getElementById('style').value=(s&&s.style)||"blue";
+  document.getElementById('style').value=(s&&s.style)||"clean";
   if(s){document.getElementById('league').value=s.league||"NBA";document.getElementById('totalOverride').value=s.totalOverride||"";}
   renderForm((s&&s.games&&s.games.length)?s.games:[{},{}]);
   update();
